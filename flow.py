@@ -5,7 +5,7 @@ from prefect import runtime
 def my_flow():
     logger = get_run_logger()
     logger.info("Hello, world!")
-    logger.info(runtime.deployment.work_pool)
+    logger.info(runtime.deployment)
 
 if __name__ == "__main__":
     my_flow()
